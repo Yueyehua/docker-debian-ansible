@@ -10,7 +10,7 @@ RUN \
 
 # Install Ansible and linters
 RUN \
-  pip3 install ansible ansible-lint pylint git-lint && \
+  pip3 install ansible ansible-lint && \
   pip3 install -U distribute;
 
 # Mask failing services
