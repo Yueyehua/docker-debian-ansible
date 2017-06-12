@@ -21,4 +21,4 @@ RUN \
     systemd-tmpfiles-setup.service;
 
 VOLUME ["/sys/fs/cgroup", "/run", "/run/lock"]
-CMD  ["/lib/systemd/systemd"]
+CMD  ["/bin/bash"]
