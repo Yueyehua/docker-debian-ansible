@@ -2,10 +2,10 @@ FROM yueyehua/debian-python:latest
 MAINTAINER Richard Delaplace "rdelaplace@yueyehua.net"
 LABEL version="1.0.0"
 
-# Install python3-pip tools
+# Install ruby for busser
 RUN \
   apt-get -qq update && \
-  apt-get -qq install -y python3-pip && \
+  apt-get -qq install -y ruby ruby-dev && \
   apt-get -qq clean autoclean;
 
 # Install Ansible and linters
